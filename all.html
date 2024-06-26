@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce71dc9243.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="//theme.hstatic.net/1000075078/1001099126/14/favicon.png?v=138" type="image/png">
+</head>
+<body>
+    <div class="screen">
+        <header>
+            <div class="header">
+                <ul class="headeritem">
+                    <li id="icon"><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
+                    <li id="icondetail"><a href=""> 131 Cửa hàng khắp cả nước</a></li>
+                    <li id="icon2"><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                    <li id="icondetail"><a href="">Đặt hàng: 1800.6936</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="menu" id="menu">
+                <a class="title" href="index.html">THE CO̲FFE HO̲USE</a>
+                <nav class="menuitem">
+                    <ul>
+                        <li><a href="maincoffe.html">Cà phê</a></li>
+                        <li class="dropdown"><a href="all.html">Menu</a>
+                            <ul class="dropdown-content">
+                                <li><a id="dropmain" href="all.html">Tất Cả</a></li>
+                                <li><a id="dropmain" href="coffee.html">Cà Phê</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="highlight.html">Cà Phê Highlight</a></li>
+                                        <li><a href="vietnam.html">Cà Phê Việt Nam</a></li>
+                                        <li><a href="machine.html">Cà Phê Máy</a></li>
+                                        <li><a href="coldbrew.html">Cold Brew</a></li>
+                                    </ul>
+                                </li>
+                                <li><a id="dropmain" href="fruit.html">Trái Cây Xay 0°C</a></li>
+                                <li><a id="dropmain" href="hitea.html">Trà Trái Cây - HiTea</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="fruit_tea.html">Trà Trái Cây</a></li>
+                                        <li><a href="hi_tea.html">Hi-Tea</a></li>
+                                    </ul>
+                                </li>
+                                <li><a id="dropmain" href="cloudtea.html">Trà Sữa - CloudTea</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="milktea.html">Trà Sữa</a></li>
+                                        <li><a href="cloudtea_specific.html">CloudTea</a></li>
+                                    </ul>
+                                </li>
+                                <li><a id="dropmain" href="greenchocolate.html">Trà Xanh - Chocolate</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="greentea.html">Trà Xanh Tây Bắc</a></li>
+                                        <li><a href="chocolate.html">Chocolate</a></li>
+                                    </ul>
+                                </li>
+                                <li><a  id="dropmain" href="iceshake.html">Thức uống đá xay</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="frosty.html">Đá xay Frosty</a></li>
+                                    </ul>
+                                </li>
+                                <li><a id="dropmain" href="snack.html">Bánh & Snack</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="savory.html">Bánh mặn</a></li>
+                                        <li><a href="sweet.html">Bánh ngọt</a></li>
+                                        <li><a href="pastry.html">Bánh Pastry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a  id="dropmain" href="homebrew.html">Thưởng Thức Tại Nhà</a>
+                                    <ul class="submenu-content">
+                                        <li><a href="home_coffee.html">Cà phê tại nhà</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="homestory.html">Chuyện Nhà</a></li>
+                        <li><a href="cloundfee.html">Cảm hứng CloudFee</a></li>
+                        <li><a href="cuahang\cuahang.html" target="_blank">Cửa hàng</a></li>
+                        <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container2">
+                <aside class="sidebar" id="sidebar">
+                    <ul class="categories">
+                        <li><a href="all.html">Tất Cả</a></li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'coffee-sub')">Cà Phê</a>
+                            <ul class="subcategories" id="coffee-sub">
+                                <li><a href="highlight.html">Cà Phê Highlight</a></li>
+                                <li><a href="vietnam.html">Cà Phê Việt Nam</a></li>
+                                <li><a href="machine.html">Cà Phê Máy</a></li>
+                                <li><a href="coldbrew.html">Cold Brew</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fruit.html">Trái Cây Xay 0°C</a></li>
+                        <li><a href="teahi.html" onclick="toggleSubcategories(event, 'hitea-sub')">Trà Trái Cây - HiTea</a>
+                            <ul class="subcategories" id="hitea-sub">
+                                <li><a href="fruit_tea.html">Trà Trái Cây</a></li>
+                                <li><a href="hi_tea.html">Hi-Tea</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'cloudtea-sub')">Trà Sữa - CloudTea</a>
+                            <ul class="subcategories" id="cloudtea-sub">
+                                <li><a href="milktea.html">Trà Sữa</a></li>
+                                <li><a href="cloudtea_specific.html">CloudTea</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'greentea-sub')">Trà Xanh - Chocolate</a>
+                            <ul class="subcategories" id="greentea-sub">
+                                <li><a href="greentea.html">Trà Xanh Tây Bắc</a></li>
+                                <li><a href="chocolate.html">Chocolate</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'iceshake-sub')">Thức uống đá xay</a>
+                            <ul class="subcategories" id="iceshake-sub">
+                                <li><a href="frosty.html">Đá xay Frosty</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'snack-sub')">Bánh & Snack</a>
+                            <ul class="subcategories" id="snack-sub">
+                                <li><a href="savory.html">Bánh mặn</a></li>
+                                <li><a href="sweet.html">Bánh ngọt</a></li>
+                                <li><a href="pastry.html">Bánh Pastry</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toggleSubcategories(event, 'homebrew-sub')">Thưởng Thức Tại Nhà</a>
+                            <ul class="subcategories" id="homebrew-sub">
+                                <li><a href="home_coffee.html">Cà phê tại nhà</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+                <main id="main-content">
+                    <div class="highlight">
+                        <h2 class="titleItem">
+                            Cà Phê Highlight
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="tra-xanh-espresso-marble.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1696220139_tra-xanh-espresso-marble_26a0eb92bfd649508d0e93173e9b3083_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Xanh Espresso Marble</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="VNcoffe">
+                        <h2 class="titleItem">
+                            Cà Phê Việt Nam
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="duong-den-sua-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1686716532_dd-suada_c180c6187e644babbac7019a2070231e_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Đường Đen Sữa Đá</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="the-coffee-house-sua-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1675355354_bg-tch-sua-da-no_4fbf208885ed464ab4b5e145336d42a2_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>The Coffee House Sữa Đá</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-sua-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_e6168b6a38ec45d2b4854d2708b5d542_large.png" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Sữa Đá</figcaption>
+                                </a>
+                                <span class="price">29.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-sua-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639377770_cfsua-nong_9a47f58888e7444a9979e0d117d49ad3_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Sữa Nóng</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="bac-siu.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639377904_bac-siu_525b9fa5055b41f183088c8e479a9472_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Bạc Sỉu</figcaption>
+                                </a>
+                                <span class="price">29.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="bac-siu-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639377926_bacsiunong_51fd4560c6b74a249176abc43f8f0ad6_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Bạc Sỉu Nóng</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-den-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639377797_ca-phe-den-da_6f4766ec0f8b4e929a8d916ae3c13254_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Đen Đá</figcaption>
+                                </a>
+                                <span class="price">29.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-den-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639377816_ca-phe-den-nong_2e0cb9233846467fbdcb76e99d2b7cac_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Đen Nóng</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="coffeMachine">
+                        <h2 class="titleItem">
+                            Cà Phê Máy
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="duong-den-marble-latte.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1686716537_dd-latte_785591205184481597a2a79b9331e03b_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Đường Đen Marble Latte</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="caramel-macchiato-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/caramel-macchiato_143623_0e070a39d0e54e808db4d91049430b51_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Caramel Macchiato Đá</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="caramel-macchiato-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/caramelmacchiatonong_168039_9a4c155f15294771b9c300b0230c6a88_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Caramel Macchiato Nóng</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="latte-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/latte-da_438410_ff2be8d76067434385f8e27b33fed780_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Latte Đá</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="latte-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/latte_851143_377d5e11c1e145a8bf5f82a64047e60d_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Latte Nóng</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="americano-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/classic-cold-brew_791256_d4d8388a3d724f879845680c0239ff68_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Americano Đá</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="americano-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1636647328_arme-nong_3c118e3822444aadb7f0e1a162d5264a_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Americano Nóng</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cappuccino-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/capu-da_487470_e06d3835cbc84e51bd635b04d541494e_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cappuccino Đá</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cappuccino-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/cappuccino_621532_f42ec557eda145b5958374ca67e65ff2_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cappuccino Nóng</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="espresso-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/cfdenda-espressoda_185438_1515261ef60b482eb58e1c545e7410a3_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Espresso Đá</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="espresso-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/espressonong_612688_41d0812d5efb47aaaebaea91a3b206db_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Espresso Nóng</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="brew">
+                        <h2 class="titleItem">
+                            Cold Brew
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="cold-brew-kim-quat.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1716811739_cold-brew-kim-quat-2_accd458085414678b3f86996899fe92f_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cold Brew Kim Quất</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cold-brew-phuc-bon-tu.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1675329120_coldbrew-pbt_127e09b0000c4027992bc3168899a656_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cold Brew Phúc Bồn Tử</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cold-brew-sua-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/cold-brew-sua-tuoi_379576_990956a1473e4ded82c8f76b877b7d15_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cold Brew Sữa Tươi</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cold-brew-truyen-thong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/classic-cold-brew_239501_31d6bfe69bc04714a437cff0fe0317ab_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cold Brew Truyền Thống</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="Fruit0C">
+                        <h2 class="titleItem">
+                            Trái Cây Xay 0°C
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="bo-sua-pho-mai-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1717388020_bo-pho-mai_34f5196f42b648e584aba3aecdaa2a87_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Bơ Sữa Phô Mai Tươi (Không kèm Phao)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="dau-pho-mai-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1717387639_dau-pho-mai_9689e15c727345fdbba97d2a0932fb4b_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Dâu Phô Mai Tươi (Không kèm Phao)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="man-pho-mai-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1717387385_man-pho-mai_dda76af2ce9b4ce588d89a99bc1af5fb_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mận Phô Mai Tươi (Không kèm Phao)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mang-cau-pho-mai-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1717387907_man-cau-pho-mai_d9746dae59a4436aaf94e4b3cd87b572_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mãng Cầu Phô Mai Tươi (Không kèm Phao)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="nho-pho-mai-tuoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1717387602_nho-pho-mai_c79f829814ff4ce9a1913400b499d43c_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Nho Phô Mai Tươi (Không kèm Phao)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="teaFruit">
+                        <h2 class="titleItem">
+                            Trà Trái Cây
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="oolong-tu-quy-kim-quat-tran-chau.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1709005899_kimquat-xuan-1_b89234e6ce4b4bb1b4ebe6c88193f7bf_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Oolong Tứ Quý Kim Quất Trân Châu</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="oolong-tu-quy-vai.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1709004168_vai-xuan-1_7637087a076d42fbba99cfa4097ea965_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Oolong Tứ Quý Vải</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-dao-cam-sa-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736819_tra-dao-cam-sa-da_63defc32ce214da487850604a63ff281_large.png" alt="" class="imageProduct">
+                                    <figcaption>Trà Đào Cam Sả - Đá</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="oolong-tu-quy-sen.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/tra-sen_905594_c9913e2981d24121ac0a676865f87908_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Oolong Tứ Quý Sen</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="oolong-tu-quy-sen-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/tra-sen-nong_025153_3242cfdfe08b4cdc8b8eac7a3da30a71_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Oolong Tứ Quý Sen (Nóng)</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-dao-cam-sa-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/tdcs-nong_288997_ad3077e0124e47998342b83c479babc4_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Đào Cam Sả - Nóng</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="hiTea">
+                        <h2 class="titleItem">
+                            Hi-Tea
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="hi-tea-dao-kombucha.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1686716517_kombucha-dao_730519fae3424a20910163efdf3f55ca_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Hi-Tea Đào Kombucha</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hi-tea-yuzu-kombucha.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1686716508_kombucha-yuzu_46413b57a4964f75b7a13f0825d91649_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Hi-Tea Yuzu Kombucha</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hi-tea-yuzu-tran-chau.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736859_hi-tea-yuzu-tran-chau_adbd04909cf34223b68589dda1e614d5_large.png" alt="" class="imageProduct">
+                                    <figcaption>Hi-Tea Yuzu Trân Châu</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hi-tea-vai.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_2c1ad452802240c5a0adb614272aa08d_large.png" alt="" class="imageProduct">
+                                    <figcaption>Hi-Tea Vải</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hi-tea-dao.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669737919_hi-tea-dao_740c7d3e25814d3c9e2aa2ad149227f2_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Hi-Tea Đào</figcaption>
+                                </a>
+                                <span class="price">49.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="TS">
+                        <h2 class="titleItem">
+                            Trà Sữa
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="tra-sua-oolong-nuong-suong-sao.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1716811640_oolong-suong-sao_810f3f7504aa45fca9f7ab6eed7a9f89_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Sữa Oolong Nướng Sương Sáo</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-den-macchiato.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/tra-den-matchiato_430281_03c59017e9b5486fb81a429ef5a98070_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Đen Macchiato</figcaption>    
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hong-tra-sua-tran-chau.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/hong-tra-sua-tran-chau_326977_cdc621e5c2544d21af5c125aa25e336b_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Hồng Trà Sữa Trân Châu</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="hong-tra-sua-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/hong-tra-sua-nong_941687_c8e4b2ca174747278d34a0af0b55a5ad_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Hồng Trà Sữa Nóng</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-sua-oolong-nuong-tran-chau.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736877_tra-sua-oolong-nuong-tran-chau_87a6942e075c461f98bf129aca861762_large.png" alt="" class="imageProduct">
+                                    <figcaption>Trà sữa Oolong Nướng Trân Châu</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-sua-oolong-nuong-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/oolong-nuong-nong_948581_5f62782cad8a4ed996937b5c00133bfd_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà sữa Oolong Nướng (Nóng)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="cloudTea">
+                        <h2 class="titleItem">
+                            CloudTea
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="cloudtea-tra-xanh-tay-bac.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1700837665_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_c77a33749c3944c5a92e52484c9c6be2_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>CloudTea Trà Xanh Tây Bắc</figcaption>
+                                </a>
+                                <span class="price">69.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cloudtea-oolong-berry.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1700837685_tra-sua-oolong-berry-ly-thuy-tinh_fe024fd02b4c429fa035f8d53299873c_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>CloudTea Oolong Berry</figcaption>
+                                </a>
+                                <span class="price">69.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="TeaNorth">
+                        <h2 class="titleItem">
+                            Trà Xanh Tây Bắc
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="tra-xanh-latte.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697450388_tx-latte_ef8fdb94fb2a4691b0cc909188b77829_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Xanh Latte</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-xanh-latte-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697450393_tx-latte-nong_3be6c0f019314336918968d951e588f2_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Xanh Latte (Nóng)</figcaption>
+                                </a>
+                                <span class="price">45.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="tra-xanh-duong-den.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697450399_tx-duong-den_3342d63e65df4bd7a264ca681b9e30f1_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Trà Xanh Đường Đen</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="frosty-tra-xanh.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697450407_tx-frosty_effb42ad21a54240b26ea1118c8d9d44_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Frosty Trà Xanh</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="chocolate">
+                        <h2 class="titleItem">
+                            Chocolate
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="chocolate-nong.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/chocolatenong_949029_dc0b1fe5e1914453a46d2032da9220d0_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Chocolate Nóng</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="chocolate-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/chocolate-da_877186_f82d23b7d28a40dbb088daf5e9b5417a_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Chocolate Đá</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="frosty">
+                        <h2 class="titleItem">
+                            Đá xay Frosty
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="frosty-phin-gato.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697441914_phin-gato_304446dce9ec4fe0a5527536b93f6eda_large.png" alt="" class="imageProduct">
+                                    <figcaption>Frosty Phin-Gato</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="frosty-ca-phe-duong-den.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697441939_ca-phe-duong-den_684615fd8fce40c2a1f6a03e0555fe62_large.png" alt="" class="imageProduct">
+                                    <figcaption>Frosty Cà Phê Đường Đen</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="frosty-caramel-arabica.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697441933_caramel-arabica_64cd3e11a9904076b7a64e24d6d20f21_large.png" alt="" class="imageProduct">
+                                    <figcaption>Frosty Caramel Arabica</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="frosty-banh-kem-dau.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697441945_banh-kem-dau_b1d03d84a9944d458f5948a3b7ce48f3_large.png" alt="" class="imageProduct">
+                                    <figcaption>Frosty Bánh Kem Dâu</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="frosty-chocochip.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697441952_choco-chip_06433e0e342b40d7bc59391be6df4c84_large.png" alt="" class="imageProduct">
+                                    <figcaption>Frosty Choco Chip</figcaption>
+                                </a>
+                                <span class="price">59.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="bread">
+                        <h2 class="titleItem">
+                            Bánh mặn
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="banh-mi-que-pate.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736956_banh-mi-que-pate_7139944a2d97407095f25793d97a6f85_large.png" alt="" class="imageProduct">
+                                    <figcaption>Bánh Mì Que Pate</figcaption>
+                                </a>
+                                <span class="price">15.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="banh-mi-que-pate-cay.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/banhmique_683851_cfa9e92f9f0946dab0ddf2d672e173dc_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Bánh Mì Que Pate Cay</figcaption>
+                                </a>
+                                <span class="price">15.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="croissant-trung-muoi.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/croissant-trung-muoi_880850_d202f0ccfb3942f58727f2c2f7de814b_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Croissant trứng muối</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="butter-croissant-sua-dac.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1701780462_butter-sua-dac_7fc4986900434bb38a70db203e2dbbc9_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Butter Croissant Sữa Đặc</figcaption>
+                                </a>
+                                <span class="price">35.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="cha-bong-pho-mai.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1669736993_cha-bong-pho-mai_2d4fe7293f0c4cbf8abd3153ae3aa5da_large.png" alt="" class="imageProduct">
+                                    <figcaption>Chà Bông Phô Mai</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="sweetbread">
+                        <h2 class="titleItem">
+                            Bánh ngọt
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="mochi-kem-phuc-bon-tu.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1643102019_mochi-phucbontu_fab2ad24829646d5981e23ff226c5315_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Phúc Bồn Tử</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mochi-kem-viet-quat.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1643102034_mochi-vietquat_276593ae4efc4467b82910245d799156_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Việt Quất</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mochi-kem-dua-dua.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1643101996_mochi-dua_f76eb74644a54edbbd68e0619b336058_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Dừa Dứa</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mochi-kem-chocolate.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1655348107_mochi-choco_fe25bd3567f140fa83d5e817e06683af_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Chocolate</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mochi-kem-matcha.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1655348113_mochi-traxanh_e71c98b23f424ca6bb70a0ac96c4d3b6_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Matcha</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mochi-kem-xoai.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1643101968_mochi-xoai_1479823668be4900b82e060746a6b411_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mochi Kem Xoài</figcaption>
+                                </a>
+                                <span class="price">19.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mousse-tiramisu.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1638170137_tiramisu_408899b621eb49f2bfff6cbf57ea44a7_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mousse Tiramisu</figcaption>
+                                </a>
+                                <span class="price">35.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="mousse-gau-chocolate.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1638170066_gau_88160be354f049499724588e6dba5c04_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Mousse Gấu Chocolate</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="pasty">
+                        <h2 class="titleItem">
+                            Bánh Pastry
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="butter-croissant.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1698736606_butter-croissant_1d14ea5c73cb444783d05d9225a30161_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Butter Croissant</figcaption>
+                                </a>
+                                <span class="price">29.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="choco-croffle.html">
+                                     <img src="https://product.hstatic.net/1000075078/product/1712139673_choco_a03d166b257b48868ad95dd2621b19fa_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Choco Croffle</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="pate-chaud.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1698736662_pate-chaud_3103b9f9011444a0b07ab7ea9bf0c9ea_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Pate Chaud</figcaption>
+                                </a>
+                                <span class="price">39.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="coffehouse">
+                        <h2 class="titleItem">
+                            Cà phê tại nhà
+                        </h2>
+                        <div class="figure-container">
+                            <figure>
+                                <a href="ca-phe-den-da-tui.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1697446642_ca-phe-den-da-tui_a178a9f2d9a84425b5c5397da639bf92_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Đen Đá Túi (30 gói x 16g)</figcaption>
+                                </a>
+                                <span class="price">116.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-sua-da-hoa-tan.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/cpsd-3in1_971575_21adaf23d2854493afe6c4941308079d_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Sữa Đá Hòa Tan (10 gói x 22g)</figcaption>
+                                </a>
+                                <span class="price">48.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-sua-da-hoa-tan-tui.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639648355_ca-phe-sua-da-hoa-tan-tui-25x22gr_78055e22bf7c4b17bb917cfbbf60ac06_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Sữa Đá Hòa Tan Túi 25x22G</figcaption>
+                                </a>
+                                <span class="price">114.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-hoa-tan-dam-vi-viet.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/1639648313_ca-phe-sua-da-hoa-tan-dam-vi-viet_cae2bfaf82ca499597e1b2f5b947b4b3_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Hoà Tan Đậm Vị Việt (18 gói x 16 gam)</figcaption>
+                                </a>
+                                <span class="price">55.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="ca-phe-sua-da-pack-6-lon.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/p6-lon-3in1_717216_99bfb5b1366f4fe6bc2383d697102d26_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Cà Phê Sữa Đá Pack 6 Lon</figcaption>
+                                </a>
+                                <span class="price">84.000 đ</span>
+                            </figure>
+                            <figure>
+                                <a href="thung-24-lon-ca-phe-sua-da.html">
+                                    <img src="https://product.hstatic.net/1000075078/product/24-lon-cpsd_225680_272d2572b0a94256b7e9f81cf07ae299_large.jpg" alt="" class="imageProduct">
+                                    <figcaption>Thùng 24 Lon Cà Phê Sữa Đá</figcaption>
+                                </a>
+                                <span class="price">336.000 đ</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                </main>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-upper">
+                    <div class="footer-b1">
+                        <h3 class="footer-title">Giới thiệu</h3>
+                        <ul class="footer-linklists">
+                            <li><a href="#" title="Về Chúng Tôi">Về Chúng Tôi</a></li>
+                            <li><a href="#" title="Sản phẩm">Sản phẩm</a></li>
+                            <li><a href="#" title="Khuyến mãi">Khuyến mãi</a></li>
+                            <li><a href="#" title="Chuyện cà phê">Chuyện cà phê</a></li>
+                            <li><a href="#" title="Cửa Hàng">Cửa Hàng</a></li>
+                            <li><a href="#" title="Tuyển dụng">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-b2">
+                        <h3 class="footer-title">Điều khoản</h3>
+                        <ul class="footer-linklists">
+                            <li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                            <li><a href="#" title="Chính sách bảo mật thông tin">Chính sách bảo mật thông tin</a></li>
+                            <li><a href="#" title="Hướng dẫn xuất hóa đơn GTGT">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-b3">
+                        <div class="hotline-footer">
+                            <p class="hotline"><i class="fa-solid fa-location-dot"></i><span> </span> Đặt hàng: 1800 6936</p>
+                            <p><i class="fa-solid fa-phone"></i><span> </span> Liên hệ</p>
+                        </div>
+                        <div class="address-footer">
+                            <p>Tầng 3-4 Hub Building <br> 195/10E Điện Biên Phủ, P.15,<br> Q.Bình Thạnh, TP.Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="footer-b4">
+                        <ul class="tch_social-links">
+                            <li id="Fb"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThe.Coffee.House.2014%2F%3Fref%3Dembed_page&tabs=time&width=350&height=250&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="350" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </li>
+                            <div class="iconn">
+                            <li id="icon4">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li id="icon3">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-under">
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <ul class="footer-infor">
+                        <li>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</li>
+                        <li>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYÊN KHA</li>
+                        <li>Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh &nbsp; Điện thoại: (028) 7107 8079 &nbsp; Email: hi@thecoffeehouse.vn</li>
+                        <li>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+</html>
